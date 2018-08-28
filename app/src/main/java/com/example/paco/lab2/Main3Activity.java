@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.support.annotation.Nullable;
 import android.widget.TextView;
 import android.widget.Button;
 
@@ -13,6 +14,7 @@ import android.widget.Button;
 public class Main3Activity extends AppCompatActivity {
 
     TextView txtView;
+    private String str;
 
 
 
@@ -21,9 +23,10 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        txtView = findViewById(R.id.TextView3);
         Intent myOtherintent = getIntent();
-        String str = myOtherintent.getStringExtra( name "TheString");
+        str = myOtherintent.getStringExtra("hola");
+        startActivity(myOtherintent);
+
 
 
 
